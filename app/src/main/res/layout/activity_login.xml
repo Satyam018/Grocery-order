@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grocerysignin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:background="@drawable/edittextbg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:paddingVertical="8dp"
+            android:hint="Email Id"
+            android:id="@+id/loginemail"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="6dp"/>
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:background="@drawable/edittextbg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/loginemail"
+            android:paddingVertical="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/passwordlogin"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="6dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordlogin"
+            android:text="Sign In."
+            android:id="@+id/signinlogin"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Does Not Have An Account?  "
+          android:layout_marginLeft="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up."
+            android:id="@+id/singuplogin"
+            android:textColor="@color/green"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

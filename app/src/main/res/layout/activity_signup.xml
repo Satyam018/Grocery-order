@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/loginpageimage"
+        android:scaleType="fitXY"
+        android:src="@drawable/grocerylogin"/>
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:background="@drawable/edittextbg"
+        android:paddingVertical="4dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_people_24"
+        android:drawablePadding="6dp"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="12dp"
+        android:layout_below="@id/loginpageimage"/>
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:hint="Email ID"
+        android:background="@drawable/edittextbg"
+        android:paddingVertical="4dp"
+        android:id="@+id/emailid"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="6dp"
+        android:textSize="15dp"
+        android:paddingRight="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="12dp"
+        android:layout_below="@id/name"/>
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittextbg"
+        android:paddingVertical="4dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="6dp"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:layout_below="@id/emailid"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up."
+                android:textAllCaps="false"
+                android:id="@+id/singup"
+                android:layout_below="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account? "
+        android:id="@+id/haveaccout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/gosigninpage"
+        android:textColor="@color/green"
+        android:layout_toRightOf="@id/haveaccout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_margin="4dp"
+    android:id="@+id/afterhomeimage"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/afterhometext"
+        android:text="Demo"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/afterhomeimage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textColor="@color/black"
+        android:id="@+id/back1"
+        android:layout_toRightOf="@+id/afterhomeimage"
+        android:layout_below="@+id/afterhometext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.600"
+        android:textColor="@color/yellow"
+        android:id="@+id/afterhomeprice"
+        android:layout_toRightOf="@+id/back1"
+        android:layout_below="@+id/afterhometext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back2"
+        android:text="Offers: "
+        android:textColor="@color/black"
+        android:layout_below="@+id/afterhometext"
+        android:layout_toRightOf="@+id/afterhomeimage"
+        android:layout_marginLeft="190dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/afterhomeoffer"
+        android:text="10% off "
+        android:textColor="@color/green"
+        android:layout_below="@+id/afterhometext"
+        android:layout_toRightOf="@+id/back2"
+        />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back3"
+       android:layout_marginTop="2dp"
+        android:src="@color/darkgrey"
+        android:layout_marginHorizontal="35dp"/>
+
+</LinearLayout>
